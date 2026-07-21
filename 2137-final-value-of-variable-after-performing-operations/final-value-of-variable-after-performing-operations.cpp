@@ -1,15 +1,24 @@
 class Solution {
 public:
     int finalValueAfterOperations(vector<string>& operations) {
-        int x=0;
+        int X=0;
         for(auto a:operations)
-        if(a=="X++"||a=="++X"){
-            x++;
-        }else{
-            x--;
+        if(a=="X++"){
+            X+=1;
         }
-        return x;
+        else if(a=="++X"){
+            X+=1;
+        }
+        else if(a=="X--"){
+            X-=1;
+        }
+        else if(a=="--X"){
+            X-=1;
+        }
+        return X;
 
-    }
+        }
+
+    
     
 };
