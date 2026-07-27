@@ -8,7 +8,7 @@ public:
             freq[nums[i]]++;
         }
         for (auto a : freq) {
-            if (a.second > 1) {
+            if (a.second == 2) {
                 ans.push_back(a.first);
             }
         }
